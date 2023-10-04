@@ -84,6 +84,9 @@ importers:
       '@trpc/server':
         specifier: ^10.37.1
         version: 10.38.5
+      generator-context:
+        specifier: workspace:*
+        version: link:../../packages/generator-context
       next:
         specifier: ^13.4.19
         version: 13.4.19(react-dom@18.2.0)(react@18.2.0)
@@ -200,9 +203,26 @@ importers:
 
   packages/generator-context:
     dependencies:
+      next-auth-generator:
+        specifier: workspace:*
+        version: link:../next-auth-generator
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
+    devDependencies:
+      bun-types:
+        specifier: ^1.0.4-canary.20231003T140149
+        version: 1.0.4-canary.20231003T140149
+
+  packages/next-auth-generator:
+    dependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.2.2
+    devDependencies:
+      bun-types:
+        specifier: ^1.0.4-canary.20231003T140149
+        version: 1.0.4-canary.20231003T140149
 
   packages/tsconfig: {}
 
@@ -1660,6 +1680,10 @@ packages:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
       semver: 7.5.4
+    dev: true
+
+  /bun-types@1.0.4-canary.20231003T140149:
+    resolution: {integrity: sha512-eEoFyj4wBCnqQGgK3pJ3LEq8Cps8nr3bU0nFYDp4vW1fSiQISwge1Y7YFOW9ffVJWZvaxHzJfzL13ZT6JcHGTg==}
     dev: true
 
   /bundle-name@3.0.0:
