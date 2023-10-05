@@ -1,18 +1,18 @@
 {
-  "name": "generator-context",
-  "version": "1.0.0",
+  "name": "@paretohq/generator",
+  "version": "1.0.4",
   "main": "index.ts",
-  "scripts": {
-    "start": "bun index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "generator": "bin.js"
   },
-  "bin": "./bin.js",
   "type": "module",
-  "keywords": [],
+  "keywords": [
+    "pareto"
+  ],
   "author": "Mosaab Emam <mosaab.emam123@gmail.com>",
   "dependencies": {
     "typescript": "^5.2.2",
-    "next-auth-generator": "workspace:*"
+    "@paretohq/next-auth-generator": "*"
   },
   "devDependencies": {
     "bun-types": "^1.0.4-canary.20231003T140149"

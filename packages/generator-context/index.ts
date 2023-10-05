@@ -1,4 +1,4 @@
-import { NextAuthGenerator } from "next-auth-generator";
+import { NextAuthGenerator } from "@paretohq/next-auth-generator";
 import type { ParetoJsonSchema } from "./types";
 
 interface Generator {
