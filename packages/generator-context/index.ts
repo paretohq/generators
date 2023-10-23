@@ -1,5 +1,5 @@
 import { NextAuthGenerator } from "@paretohq/next-auth-generator";
-import type { ParetoJsonSchema } from "./types";
+import { ParetoJsonSchema } from "@paretohq/types";
 
 interface Generator {
   execute: () => Promise<Boolean>;
@@ -14,7 +14,7 @@ export class GeneratorContext {
   }
 
   async prepare() {
-    if (this.schema.auth.provider == "next-auth") {
+    if (this.schema.auth.solution == "next-auth") {
       this.generators.push(new NextAuthGenerator(this.schema));
     }
   }

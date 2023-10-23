@@ -1,0 +1,11 @@
+{
+  "name": "@paretohq/types",
+  "version": "0.1.0",
+  "description": "Types for pareto packages and apps",
+  "main": "index.ts",
+  "types": "index.ts",
+  "author": "Mosaab Emam <mosaab.emam123@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  }
+}

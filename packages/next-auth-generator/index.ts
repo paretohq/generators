@@ -1,3 +1,4 @@
+import { ParetoJsonSchema } from "@paretohq/types";
 import { writeFileSync } from "fs";
 import { join } from "path";
 import { authImportLineBuilder } from "./builders/auth-import.line.builder";
@@ -10,7 +11,6 @@ import {
 } from "./builders/env-module.line.builder";
 import { envFileBuilder } from "./builders/env.file.builder";
 import { envLineBuilder } from "./builders/env.line.builder";
-import { ParetoJsonSchema } from "./types";
 
 export class NextAuthGenerator {
   schema: ParetoJsonSchema;
